@@ -1,5 +1,4 @@
 /*
-
 Ranking Analysis
 
 Purpose:
