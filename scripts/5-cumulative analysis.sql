@@ -1,5 +1,4 @@
 /*
-
 Cumulative Analysis
 
 Purpose:
