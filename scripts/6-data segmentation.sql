@@ -9,7 +9,7 @@ Purpose:
 SQL Concepts Used:
 - Conditional Logic: CASE
 - Aggregation: COUNT(), SUM(), MIN(), MAX()
-- Grouping and Common Table Expressions (CTEs)
+- Common Table Expressions (CTEs)
 */
 
 
