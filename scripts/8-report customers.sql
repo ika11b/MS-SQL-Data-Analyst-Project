@@ -13,7 +13,7 @@ Highlights:
    - Lifespan (months active)
 4. Calculates KPIs:
    - Recency (months since last order)
-   - Average order value (AOV)
+   - Average order value
    - Average monthly spend
 
 SQL Concepts Used:
@@ -100,7 +100,18 @@ SELECT
     total_sales,
     total_quantity,
     total_products,
-    lifespan
+    lifespan,
+   -- Average Order Revenue
+    CASE 
+        WHEN total_orders = 0 THEN 0
+        ELSE total_sales / total_orders
+    END AS avg_order_revenue,
+
+    -- Average Monthly Revenue
+    CASE
+        WHEN lifespan = 0 THEN total_sales
+        ELSE total_sales / lifespan
+    END AS avg_monthly_revenue
 
 FROM customer_aggregation;
 
