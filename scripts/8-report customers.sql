@@ -18,8 +18,8 @@ Highlights:
 
 SQL Concepts Used:
 - Common Table Expressions (CTEs)
-- Aggregates: COUNT(), SUM(), MAX(), DATEDIFF()
-- CASE
+- Aggregates and conditional logic: CASE, COUNT(), SUM(), MAX(), DATEDIFF()
+- Creating VIEW
 */
 
 
