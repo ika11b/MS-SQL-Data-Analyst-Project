@@ -105,7 +105,7 @@ SELECT
     total_customers,
     avg_selling_price,
 
-    -- Average Order Revenue (AOR)
+    -- Average Order Revenue
     CASE 
         WHEN total_orders = 0 THEN 0
         ELSE total_sales / total_orders
